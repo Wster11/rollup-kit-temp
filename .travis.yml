@@ -1,14 +1,15 @@
 language: node_js
 node_js:
-    - "12.13"
-if: tag IS present    
+- '12.13'
+if: tag IS present
 deploy:
-    provider: npm
-
-    email: 464905943@qq.com
-    api_key:
-      secure: BPGjcnKDDPwe46IUVR67HBKZpsHOe7gFqUkzkX652aU/K0yTZUqddUiv2Wgy8js54E71+exsU4Se2VHrxkCHATC+lptSUJOX17WpxT+X7b/WgieI+lXxEjTVYproXejBRPESCPMqeoTPUBQpjSRzFyO7kU+bB/6i96F8WFot+WT8qpM2TXQhC1s4E/x7tKGM9sQvvRtWqX6c+/BntAroe27kKE/OzwiI+GLHCWuwVAl1AYd97XQau2rw0W3LJxcQ5qEiQvKTQZLrMNXI3++q+UeCjbCfK3mdVkAsXKcHymB/NadCcNva3LkJd4RKX4iexYqmP1wHeN3C0UdZYZdAQSEykegBVbW7n9QRdaj7wtKwKxjRo/fqC1ycGcKF+us+4eFO5MBiFrkkYhYWeaDHGVZndHN3UL/OSklVuMeVMqpObnz29lL+DMZShMTa41dM+N0JMsee3k3ZLMYNulP+qa2Ln33lEur4512QH3yQ4I3CX8fY/uVby4lt7b6/jCeXsG4xLGboxQ73d3rPYR9K0zcBn2xOLsMHw+kvCTXGOEQLNdhXYTGCmcCL7pOPkJvVvBToM4cOEih3mR0S6QDOyqT+qzzDXkUhJxS2RrYkkcJGld0CCGUR3FR6bU4C16Qym9lEMy17P+YVdy79xL9bWs9QzYTMwQ/KUBYlhrJrmbo=
-    skip_cleanup: true
-    on:
-        tags: true
-        # branch: master
+  provider: npm
+  email: 464905943@qq.com
+  api_key:
+    secure: BPGjcnKDDPwe46IUVR67HBKZpsHOe7gFqUkzkX652aU/K0yTZUqddUiv2Wgy8js54E71+exsU4Se2VHrxkCHATC+lptSUJOX17WpxT+X7b/WgieI+lXxEjTVYproXejBRPESCPMqeoTPUBQpjSRzFyO7kU+bB/6i96F8WFot+WT8qpM2TXQhC1s4E/x7tKGM9sQvvRtWqX6c+/BntAroe27kKE/OzwiI+GLHCWuwVAl1AYd97XQau2rw0W3LJxcQ5qEiQvKTQZLrMNXI3++q+UeCjbCfK3mdVkAsXKcHymB/NadCcNva3LkJd4RKX4iexYqmP1wHeN3C0UdZYZdAQSEykegBVbW7n9QRdaj7wtKwKxjRo/fqC1ycGcKF+us+4eFO5MBiFrkkYhYWeaDHGVZndHN3UL/OSklVuMeVMqpObnz29lL+DMZShMTa41dM+N0JMsee3k3ZLMYNulP+qa2Ln33lEur4512QH3yQ4I3CX8fY/uVby4lt7b6/jCeXsG4xLGboxQ73d3rPYR9K0zcBn2xOLsMHw+kvCTXGOEQLNdhXYTGCmcCL7pOPkJvVvBToM4cOEih3mR0S6QDOyqT+qzzDXkUhJxS2RrYkkcJGld0CCGUR3FR6bU4C16Qym9lEMy17P+YVdy79xL9bWs9QzYTMwQ/KUBYlhrJrmbo=
+  skip_cleanup: true
+  on:
+    tags: true
+env:
+  global:
+    secure: p6/tEqsa5vXDc8O8GXEcZtnH7p4Tyx7yDEDqEXe7Nej9TVQCH34a2WYJJUeeWVYQIWxJHTgEMT/3MAeXBvQh99AqdB/otE9I7MrjqSRsJDBaLaoI2BuFKExnaYngwmniVrdg5i4xkyg9dzF3R5t8m5n+A1a2A7M+egpaRHqLs+jE6VzWcogcLrVoletWWOQKuJD7wSOGGVxTDwJwX0jXtO3frpNNgWgrsLA5hBI6/KKSCRZCqMyW+XvlwoYsPzfT5D0IBkiDMCsMPac6x5iuXU85K/qEgZJ7MGMDG/SHqQ3YHx/ON4LzF5bMFBPBzBoP0OtYzaIUJP9uoSl3hlUsQ0VW47lNQiK2zERFlFZGIrLDX7rK9zH0JcrZWJ1yBhKHniv+hcNPCPWnZpjluhJ7FCzmTxvAB1etZbn40+A+keb7o6jSBMfvHtGXtCuAiiMC/8riWrWqAmbhxgfxOhAxnjFugEkDTQo3JsjaM+xEDRPcpM5v6VCOn1y0DukgH655Xn+OzUxG5f42Hdf3oFKfh+ceVJbWQ9qC7iXBenkZyoDy/MBSDTEfRwc80j35ItoCgFXMmu2lVA8sVCtL3llPp3/RoijTLVu1+tD0UNKY8LgBHKbDA1IZVO4qpHQMB4YQK5RPUAw5LsrrtfHwsiBtBf0FnL0ZllJS1JxJq71mDuA=
