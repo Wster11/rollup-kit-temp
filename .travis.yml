@@ -10,4 +10,3 @@ deploy:
     on:
         tags: true
         branch: master
-        repo: Wster11/rollup-base-cli
