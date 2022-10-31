@@ -1,14 +1,13 @@
 language: node_js
 node_js:
-  - '8'
+    - "12.13"
 deploy:
-  provider: npm
-  email: 464905943@qq.com
-  api_key:
-    secure: cP4nrJ5qztXz3ZTGiuB1yrCVjmBHz32XUJsNVt/CcOw+FtuiahXn6WZZpF+E6FtwGt+VSZt99gftdEzotdua440uNJtgli/6qReH8hznPYG+BvSyqMRplXzGTNyhZ4K4DsgzyECDFFYOuteic4LOHY+OMOkujGlfCZybRkpbj/1N/o/1B4Seyo8jmL/S/WHcRLRJfgYU/4Ia/5Jk1XTWUEszo+KtiVCCtsWyN3ZBbauQ4JfUrjL0kNDwJsc1I1e/bVzsubsIvPT6gbiDezzmxwlcW4Ls5I39kxXlJZ7Xr0cWi6IBvdPRZnPpFXdAIQ4eZSkR3q4iPyCekHJl9GEEyvmEewS9dD7MSyVzKkpUVqtrxHx15qObhIb62Ltm3fDge54Q8Q9VYGXUSms0I2YC+zIJoygqSQIXfJbgv4aHyCGD5WBAjZYO5Zv3TCty92rGmkSU0NEz9ilqthhhtOCRsqS96lMXyc6e2oVdb4oOPWwwSgWrxR3IV2/aYbxRrHnXyikpufuoPoP+fYEYWIuKtxJRvFdTBGiTtjg8HWBJzFfGQPt/jqtfEcQxBhkM4I/zb4sL/hLw+k+VYAXo2EobIh6mrf/5Mvq7OJYf+Wo0lgXmzVB5fWwfFDr7qri9/XFnsyWkpj4mbwJhRe6xh1ApJ/O1EAV6khat31mFMtPaGlE=
-  skip_cleanup: true
-  on:
-    tags: true
-    branch: master
-  tag: latest
-  condition: '$TRAVIS_TAG =~ ^v[0-9]+.[0-9]+.[0-9]+$'
+    provider: npm
+
+    email: 464905943@qq.com
+    api_key:
+      secure: cP4nrJ5qztXz3ZTGiuB1yrCVjmBHz32XUJsNVt/CcOw+FtuiahXn6WZZpF+E6FtwGt+VSZt99gftdEzotdua440uNJtgli/6qReH8hznPYG+BvSyqMRplXzGTNyhZ4K4DsgzyECDFFYOuteic4LOHY+OMOkujGlfCZybRkpbj/1N/o/1B4Seyo8jmL/S/WHcRLRJfgYU/4Ia/5Jk1XTWUEszo+KtiVCCtsWyN3ZBbauQ4JfUrjL0kNDwJsc1I1e/bVzsubsIvPT6gbiDezzmxwlcW4Ls5I39kxXlJZ7Xr0cWi6IBvdPRZnPpFXdAIQ4eZSkR3q4iPyCekHJl9GEEyvmEewS9dD7MSyVzKkpUVqtrxHx15qObhIb62Ltm3fDge54Q8Q9VYGXUSms0I2YC+zIJoygqSQIXfJbgv4aHyCGD5WBAjZYO5Zv3TCty92rGmkSU0NEz9ilqthhhtOCRsqS96lMXyc6e2oVdb4oOPWwwSgWrxR3IV2/aYbxRrHnXyikpufuoPoP+fYEYWIuKtxJRvFdTBGiTtjg8HWBJzFfGQPt/jqtfEcQxBhkM4I/zb4sL/hLw+k+VYAXo2EobIh6mrf/5Mvq7OJYf+Wo0lgXmzVB5fWwfFDr7qri9/XFnsyWkpj4mbwJhRe6xh1ApJ/O1EAV6khat31mFMtPaGlE=
+    on:
+        tags: true
+        branch: master
+        repo: flytam/babel-plugin-resolve-config-json
