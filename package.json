@@ -18,8 +18,7 @@
     "copy": "node script/copy.js",
     "lint": "eslint --ext .js src test/unit test/e2e",
     "test": "echo \"Error: no test specified\"",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w",
-    "postversion": "git push --follow-tags"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w"
   },
   "husky": {
     "hooks": {
