@@ -10,4 +10,4 @@ deploy:
     on:
         tags: true
         branch: master
-        repo: flytam/babel-plugin-resolve-config-json
+        repo: Wster11/rollup-base-cli
