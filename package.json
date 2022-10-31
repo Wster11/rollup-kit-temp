@@ -1,6 +1,6 @@
 {
   "name": "rollup-kit-template",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "rollup打包SDK、jslib时基本配置",
   "main": "build/index.common.js",
   "module": "build/index.esm.js",
