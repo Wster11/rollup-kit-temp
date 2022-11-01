@@ -1,29 +1,13 @@
 language: node_js
 node_js:
-  - "8"
-if: tag IS present
-jobs:
-  include:
-    - stage: test
-      script:
-        - node --version
-        - npm --version
-        - echo "Testing Started ..."
-        - npm test
-        - echo "Testing Finished."
-
-    - stage: deploy
-      script:
-        - echo "NPM Deploying Started ..."
-        - npm version
-        - npm run build
-        - echo "NPM Building Finished."
-      deploy:
-        provider: npm
-        email: 464905943@qq.com
-        api_key:
-          secure: fjgNP3uRsVgEfPxiWEhQzx6QvX/9066pGrx53/NGTrevI9WmfI7wonAiAYhjHHPlJOFSbx5rLQEqJzG/iMjCXPDC3qaMCCzLqpPFuWVdwU8be3sRMazcX2X+dPr6K4sNjqOz647Qy1PfTKPBL4Jp+AzkXGqhBuxSAdw1094vAPLH+PazqkbVMH4ruuasdmTGHJTPJUk4iNOUmt1i0Wf+VGaHuto3+Jscgi37FebtwCyS89mCCYpG/icKva5vmSlbn+iz4U6bl0Y5YXoXHEQ6dpVpHy2sS8pnBGpXGlbkNANm8l2MK/ZIF2X8WVgBKsoqtNT+NgUIOjnHB/6lI9S7lCiEb9GhAZJsYADirxBgMRWIBWnxirkdLNAxoE93EuyIsg01gVy2Dhbg8spK80IU+mT0/1nHx1yzVU0KpEQSZ7wbKXj7rQaNzP5OC+kW+Nf7MXhLDdjVkBdIfncy4E62JPjOz7PsOctEQjQuDyJjIiYBw1AFVuACifjGfGQgEFcQIIDITYZBABm4SAjR3vowRH4q7NaOK5PqYx++gnvmwQyQuclrY3lfnfw9URCNsS0xJbxzW0uZmU0dCHUFGlrGuNoqinHRup8H/ea1nGbcXDyYbZt3BJjcinZKzxZW0cALW2XF4GoRp41eJlkVVqErrgEaRT03nc6PwxjB6GsJY7c=
-        on:
-          tags: true
-          repo: Wster11/rollup-kit-temp
-        skip_cleanup: "true"
+  - '8'
+if: tag IS present   
+deploy:
+  provider: npm
+  email: 464905943@qq.com
+  api_key:
+    secure: fjgNP3uRsVgEfPxiWEhQzx6QvX/9066pGrx53/NGTrevI9WmfI7wonAiAYhjHHPlJOFSbx5rLQEqJzG/iMjCXPDC3qaMCCzLqpPFuWVdwU8be3sRMazcX2X+dPr6K4sNjqOz647Qy1PfTKPBL4Jp+AzkXGqhBuxSAdw1094vAPLH+PazqkbVMH4ruuasdmTGHJTPJUk4iNOUmt1i0Wf+VGaHuto3+Jscgi37FebtwCyS89mCCYpG/icKva5vmSlbn+iz4U6bl0Y5YXoXHEQ6dpVpHy2sS8pnBGpXGlbkNANm8l2MK/ZIF2X8WVgBKsoqtNT+NgUIOjnHB/6lI9S7lCiEb9GhAZJsYADirxBgMRWIBWnxirkdLNAxoE93EuyIsg01gVy2Dhbg8spK80IU+mT0/1nHx1yzVU0KpEQSZ7wbKXj7rQaNzP5OC+kW+Nf7MXhLDdjVkBdIfncy4E62JPjOz7PsOctEQjQuDyJjIiYBw1AFVuACifjGfGQgEFcQIIDITYZBABm4SAjR3vowRH4q7NaOK5PqYx++gnvmwQyQuclrY3lfnfw9URCNsS0xJbxzW0uZmU0dCHUFGlrGuNoqinHRup8H/ea1nGbcXDyYbZt3BJjcinZKzxZW0cALW2XF4GoRp41eJlkVVqErrgEaRT03nc6PwxjB6GsJY7c=
+  on:
+    tags: true
+    repo: Wster11/rollup-kit-temp
+  skip_cleanup: 'true'
