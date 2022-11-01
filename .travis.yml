@@ -18,7 +18,6 @@ jobs:
         - npm version
         - npm run build
         - echo "NPM Building Finished."
-        - cd build
       deploy:
         provider: npm
         email: 464905943@qq.com
