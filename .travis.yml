@@ -12,6 +12,7 @@ before_script:
 script:
   - npm run build
   - cd ./build
+  - cp ../package.json .
 after_script:
   
 # E: Build LifeCycle
