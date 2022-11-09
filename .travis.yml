@@ -1,7 +1,20 @@
 language: node_js
 node_js:
-  - '8'
-if: tag IS present   
+  - "8"
+cache:
+  directories:
+    - node_modules
+# S: Build Lifecycle
+install:
+  - npm install
+before_script:
+# 无其他依赖项所以执行npm run build 构建就行了
+script:
+  - npm run build
+after_script:
+  - cd ./build
+# E: Build LifeCycle
+if: tag IS present
 deploy:
   provider: npm
   email: 464905943@qq.com
@@ -10,4 +23,4 @@ deploy:
   on:
     tags: true
     repo: Wster11/rollup-kit-temp
-  skip_cleanup: 'true'
+  skip_cleanup: "true"
